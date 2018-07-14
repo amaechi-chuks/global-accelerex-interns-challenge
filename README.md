@@ -49,9 +49,8 @@ git clone https://github.com/amaechi-chuks/global-accelerex-interns-challenge.gi
 
 ```
 global-accelerex-interns-challenge/
-index.css
 index.html
-index.js
+main.js
 person.html
 README.md
 screenshot_21.png
