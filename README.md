@@ -52,7 +52,6 @@ global-accelerex-interns-challenge/
 index.html
 index.css
 main.js
-person.html
 README.md
 screenshot_21.png
 ```
