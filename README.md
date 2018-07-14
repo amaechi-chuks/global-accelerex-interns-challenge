@@ -50,6 +50,7 @@ git clone https://github.com/amaechi-chuks/global-accelerex-interns-challenge.gi
 ```
 global-accelerex-interns-challenge/
 index.html
+index.css
 main.js
 person.html
 README.md
