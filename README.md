@@ -1,0 +1,1 @@
+# global-accelerex-interns-challenge
