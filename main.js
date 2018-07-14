@@ -22,16 +22,18 @@ fetch(url)
             let li = createNode('li'),
                 img = createNode('img'),
                 button = createNode('button'),
+                
                 id_name = person.name.split(' ')[0]; //creating unique id for button
             img.src = person.photo;
             img.alt = person.name;
              //button.setAttribute('class', class_name); // Trigger the Modal 
              img.setAttribute('id', id_name); // Trigger the Modal
-             //img.setAttribute('alt', person.name);
+             //img.setAttribute('alt', perso n.name);
              button.innerHTML = person.name + ' ';
              append(li, img);
             append(li, button);
             append(ul, li);
+            
             
             // Get the modal
             const modal = document.getElementById('myModal');
