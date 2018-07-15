@@ -212,3 +212,9 @@ img:hover {
       opacity: 0;
     }
   }
+
+  form {
+    margin: auto;
+    width: 30%;
+    text-align: center;
+}
