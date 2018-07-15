@@ -12,15 +12,15 @@
     </head>
 
     <body>
-         <nav class="main-nav"></nav>
+        <nav class="main-nav"></nav>
         <h1>People of Substance</h1>
         <div class="container">
-                <div class="card">
-            <ul id="persons"></ul>
-        </div>
-       
-    
+            <div class="card">
+                <ul id="persons"></ul>
             </div>
+
+
+        </div>
 
         <!-- The Modal -->
         <div id="myModal" class="modal">
@@ -33,6 +33,16 @@
 
             <!-- Modal Caption (Image Text) -->
             <ul id="caption"></ul>
+            <div id="to_edit">
+                <form id='postData' action="" method="post">
+                    Description:
+                    <br>
+                    <input id='description' type="text" name="description" value=''>
+                    <br>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
         </div>
 
