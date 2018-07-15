@@ -17,7 +17,7 @@ fetch(url)
     .then(function (data) {
         const ul = document.getElementById('persons');
         const people = data.persons;
-
+         
         return people.map(function (person) {
             let li = createNode('li'),
                 img = createNode('img'),

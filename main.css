@@ -3,11 +3,19 @@ body {
     margin: 0;
   padding: 0;
   font-family: sans-serif;
+  /*
   -ms-background:linear-gradient(to right, darkblue, lightblue);
     -webkit-background: linear-gradient(to right, darkblue, lightblue);
     -moz-background: linear-gradient(to right, darkblue, lightblue);
     background: linear-gradient(to right, darkblue, lightblue);
-    background: cover;
+    
+    background: whitesmoke;
+    background: url('https://images.unsplash.com/photo-1531523240924-bd3a458a5259?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3e7a24c7579ccda2454e12b45ea7c69b&auto=format&fit=crop&w=1052&q=80');
+    */
+    background: url('https://images.unsplash.com/photo-1505860125062-3ce932953cf5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=694e666d0cd1d781263b02ffafaae551&auto=format&fit=crop&w=634&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /*styling the header */
@@ -15,7 +23,7 @@ body {
     text-align: center;
     border: 10px;
     margin: 2px;
-    padding: 2px;
+    padding: 20px 10px;
     border-radius: 100px;
     font-family: 'Anton', sans-serif;
     letter-spacing: 3px;
@@ -64,9 +72,11 @@ ul {
 
 .card {
     /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border: 10px
+    border: 50px;
+    padding: 20px 16px;
+    background: #d6d6d6
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -81,10 +91,13 @@ img {
     width: auto;
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.5s 0.5s;
 }
 
-img:hover {opacity: 0.7;}
+img:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
 
 /* The Modal (background) */
 .modal {
@@ -166,7 +179,7 @@ img:hover {opacity: 0.7;}
 }
 .footer {
     display: flex;
-    margin-top: 100px;
+    margin-top: 20px;
 
 }
 .footer-nav {
