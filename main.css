@@ -17,6 +17,11 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.main-nav {
+    background-color: white;
+    height: 100px;
+    
+}
 
 /*styling the header */
  h1{
@@ -179,11 +184,11 @@ img:hover {
 }
 .footer {
     display: flex;
-    margin-top: 20px;
+    margin-top: auto;
 
 }
 .footer-nav {
-    margin-bottom: 20px; 
+    margin-bottom: 10px; 
     
 }
 .credits {
