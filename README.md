@@ -106,4 +106,4 @@ This projects is under the MIT LICENSE
 
 You can test the api endpoints
 
-- [Here ](https:)
+- [Here ](https://amaechi-chuks.github.io/global-accelerex-interns-challenge/)
