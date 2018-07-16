@@ -29,7 +29,7 @@ This is a REST API challenge that will contritube greatly to my journey of becom
 
 ### Screen Shot
 
-![alt](/screenshot_21.png)
+![alt](/Screenshot_21.png)
 
 
 ## Installing
