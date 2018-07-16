@@ -29,7 +29,7 @@ This is a REST API challenge that will contritube greatly to my journey of becom
 
 ### Screen Shot
 
-![alt](/Screenshot_21.png)
+![alt](/Screen_21.png)
 
 
 ## Installing
@@ -53,7 +53,7 @@ index.html
 index.css
 main.js
 README.md
-screenshot_21.png
+Screen_21.png
 ```
 
 
