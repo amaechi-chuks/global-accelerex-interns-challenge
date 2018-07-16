@@ -1,4 +1,4 @@
-# global-accelerex-interns-challenge
+# global-accelerex-interns-challenge (Front End Challenge)
 
 ## Table of contents
 
