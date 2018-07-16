@@ -218,3 +218,7 @@ img:hover {
     width: 30%;
     text-align: center;
 }
+#mod{
+    background-color: white;
+    font-size: bold;
+}
