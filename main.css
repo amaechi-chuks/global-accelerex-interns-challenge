@@ -3,6 +3,7 @@ body {
     margin: 0;
   padding: 0;
   font-family: sans-serif;
+ /* background-color: #d7cec7;*/
   /*
   -ms-background:linear-gradient(to right, darkblue, lightblue);
     -webkit-background: linear-gradient(to right, darkblue, lightblue);
@@ -24,15 +25,36 @@ body {
 }
 
 /*styling the header */
- h1{
-    text-align: center;
+
+  h1{
+    animation:
+    pulse 3s ease infinite alternate,
+    nudge 5s linear infinite alternate;
     border: 10px;
     margin: 2px;
-    padding: 20px 10px;
+    padding: 2px;
     border-radius: 100px;
     font-family: 'Anton', sans-serif;
     letter-spacing: 3px;
-    box-shadow: 5px
+    box-shadow: 5px;
+    text-align: center;
+    color: #18121e
+  
+  }
+  @keyframes pulse {
+    0%, 100%{
+  
+    }80% {
+    
+    }
+  }
+  @keyframes nudge {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    80% {
+      transform: translate(-100PX, 0);
+    }
   
   }
   
@@ -101,6 +123,14 @@ img:hover {
     opacity: 0.7;
     transform: scale(1.1);
 }
+.main-logo {
+    position: fixed;
+    margin:  0 auto;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px transparent;
+    padding-bottom: 20px;
+}
 
 /* The Modal (background) */
 .modal {
@@ -134,8 +164,8 @@ img:hover {
     max-width: 700px;
     text-align: center;
     color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+    padding: 10px 0px;
+    height: 60px;
 }
 
 /* Add Animation - Zoom in the Modal */
@@ -181,14 +211,21 @@ img:hover {
     cursor: pointer;
 }
 .footer {
-    display: flex;
-    margin-top: auto;
+    position: relative;
+    margin-top: 40px;
 
 }
 .footer-nav {
-    margin-bottom: 10px; 
+    margin-bottom: 20px; 
+    background-position: fixed;
     
 }
+
+#to_edit{
+    display: none;
+    
+}
+
 .credits {
     justify-content: center;
     display: flex;

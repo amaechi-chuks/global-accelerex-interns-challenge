@@ -45,7 +45,7 @@ fetch(url)
             img_modal.onclick = function () {
                 postBody = person;
                 newUrlData = id_name;
-                console.log(newUrlData);
+                //console.log(newUrlData);
                 modal.style.display = 'block';
                 modalImg.src = img.src;
                 captionText.innerHTML = `Name : ${img.alt} <br> Age: ${person.age} <br> Description: <span id='mod'>${person.description}</span> <a id='modify' href='#'><i  class='fa fa-pencil-square-o' style='font-size:24px;color:red'</a></i> `;
@@ -54,7 +54,7 @@ fetch(url)
                 // Fetching the edit icon and toggling the edit form
                 const  update = document.getElementsByClassName('fa')[0];
                 //console.log(update);
-                const modle = document.getElementById('mod');
+                let modle = document.getElementById('mod');
                 const edit = document.getElementById('to_edit');
                // console.log(edit);
                 update.onclick = function () {
@@ -68,7 +68,7 @@ fetch(url)
              
             
             const edit = document.getElementById('to_edit');
-            const  model = document.getElementById('mod');
+            let  model = document.getElementById('mod');
 
             // Get the <span> element that closes the modal
             const span = document.getElementsByClassName('close')[0];
@@ -89,25 +89,25 @@ document.getElementById('postData').addEventListener('submit', postData);
 
 
 function postData(event) {
-    return postBody;
-    const postUrl = url + newUrlData;
+    return (JSON.stringify(postBody));
+    let postUrl = url + newUrlData;
     event.preventDefault();
     return postUrl;
     // The data we are going to send in our request
     let data = document.getElementById('description').value;
-        
-    let good = {
-        'description' : `${data}`
-    };
+     postBody.description = data;   
+   // let good = {
+    //    'description' : `${data}`
+    //};
     // The parameters we are going pass to the fetch function
     let fetchData = {
         method: 'POST',
-        body: good,
+        body: postBody,
         headers: new Headers()
     }
     fetch(postUrl, fetchData)
         .then(function (resp) {
-            console.log(resp.json())
+            return(resp.json())
 
         })
 };
